@@ -45,7 +45,7 @@ The following is a list of available functions. Refer to the greatly commented h
 
 
 ## Example
-```
+```C
 s_str foo = s_str_create_from_c_str("  wow ");
 
 s_str_trim(&foo);

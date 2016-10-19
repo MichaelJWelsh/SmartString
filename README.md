@@ -1,5 +1,5 @@
 # SmartString
-A Lightweight C Library Meant To Mimic String Functionality In C++ 
+A Lightweight C Library Meant To Mimic String Functionality Present In C++ 
 
 
 ## Ideology

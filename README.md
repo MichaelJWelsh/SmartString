@@ -3,7 +3,7 @@ A Lightweight, Fast, and Safe C Library Meant to Mimic String Functionality Pres
 
 
 ## Ideology
-The goal of this library is to provide string-like functionality similar to C++'s STL string class.  Every "smart" string worries about memory management and data organization for you, letting you better focus on your task ahead.  The "smart" string type is "s_str".  Every s_str function has the prefix "s_str\_" and takes in the memory address of the s_str that it will operate on as the first argument (with the exception of the *create* functions).  Every s_str that is created **must** be later destroyed with a call to *destroy*.
+The goal of this library is to provide string-like functionality similar to C++'s STL string class.  Every "smart" string worries about memory management and data organization for you, letting you better focus on your task ahead.  The "smart" string type is "s_str".  Every s_str function has the prefix "s_str\_" and takes in the memory address of the s_str that it will operate on as the first argument (with the exception of the *create* functions).  Every s_str that is created **must** be later destroyed with a call to *destroy*.  This library only supports ASCII characters as of now.
 
 
 ## API

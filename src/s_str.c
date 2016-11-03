@@ -479,14 +479,20 @@ void s_str_push_back(s_str *const this_, const char c){
 }
 
 
-void s_str_pop_back(const s_str *const this_){
+char s_str_pop_back(const s_str *const this_){
     assert(this_ != NULL && *this_ != NULL);
 
     if(access_struct(*this_).size > 1){
+        char popped_char = access_struct(*this_).string[access_struct(*this_).size - 2];
+        
         access_struct(*this_).string[access_struct(*this_).size - 2] = '\0';
 
         --access_struct(*this_).size;
+        
+        return popped_char;
     }
+    
+    return '\0';
 }
 
 

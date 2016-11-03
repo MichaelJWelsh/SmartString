@@ -257,8 +257,10 @@ void s_str_push_back(s_str *const this_, const char c);
 
 
 /* Removes the char (excluding the default terminating null character) located at the end of the s_str.
+ * 
+ * Returns the removed char.
  */
-void s_str_pop_back(const s_str *const this_);
+char s_str_pop_back(const s_str *const this_);
 
 
 /* Appends the c_str to the end of the s_str.
